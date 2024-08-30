@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .moon{
+            display: grid;
+            grid-template-areas: "image1 image1 image2"
+                                   "image3 image4 image4"
+                                   "image3 image5 image5";
+                                   border-radius: 10px;
+                                   gap: 20px;
+                                   background-color: navy;
+                                   /* box-shadow: 10px 20px 10px gray; */
+
+
+        }
+        .img1{
+            grid-area: image1;
+           
+        }
+        .img2{
+            grid-area: image2;
+        }
+        .img3{
+            grid-area: image3;
+        }
+        .img4{
+            grid-area: image4;
+        }
+        .img5{
+            grid-area: image5;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border: 5px solid deeppink;
+            border-radius: 10px;
+        
+        }
+        .img1:hover{
+            transform: rotate(56deg);
+        }
+        .img2:hover{
+            transform: translate(250px,250px);
+        }
+        .img3:hover{
+            transform: scale(2);
+        }
+        .img4:hover{
+            transform: rotateX(90deg);
+        }
+        .img5:hover{
+            transform: skew(30deg,20deg);
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="moon">
+    <img class="google img1" src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg">
+    <img class="google img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNDWN4vUOJAJ_UTzWfrV6xeV4Xv9Uj1UgGmvHF_vSEA3eXVJBPpm6OkAqdDRPAUQWgLk&usqp=CAU">
+    <img class="google img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoHr3F12gvCSvXa1XEr6yaw_ABM6VGQn9_Xu563luEJN5ap_cFIEbfGyif2KL8rEJEU64&usqp=CAU">
+    <img class="google img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5yRajIt8KX-DMiS8sp4BXEf02YjmqsqLvXFN9Y4Dz-hfpMUJnl4lcwhnVxo2bdbs5vQ&usqp=CAU">
+    <img class="google img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7scILnDBGVkWOZnrjc_iXHqUh4KnPHmthc0lxt3frvy3bpuwwmgCz0wCuNsiQLKdr_FM&usqp=CAU">
+</div>
+</body>
+
+
